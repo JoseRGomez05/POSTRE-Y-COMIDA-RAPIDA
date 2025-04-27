@@ -497,7 +497,7 @@ document.getElementById('checkoutBtn').addEventListener('click', () => {
     const encodedMessage = encodeURIComponent(message);
 
     // Redireccionar a WhatsApp
-    window.open(`https://wa.me/573004804521?text=${encodedMessage}`, '_blank');
+    window.open(`https://wa.me/573004273787?text=${encodedMessage}`, '_blank');
 });
 // ==============================
 // ENVIAR FORMULARIO DE CONTACTO A WHATSAPP CON CONFIRMACIÓN
@@ -546,7 +546,7 @@ orderForm.addEventListener('submit', function(e) {
 
 // Botón Sí, Enviar
 confirmYes.addEventListener('click', () => {
-    window.open(`https://wa.me/573004804521?text=${finalMessage}`, '_blank');
+    window.open(`https://wa.me/573004273787?text=${finalMessage}`, '_blank');
     confirmModal.style.display = 'none';
 });
 

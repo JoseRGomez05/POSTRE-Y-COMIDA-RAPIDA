@@ -196,7 +196,7 @@ function updateCart() {
     });
     
     // Actualizar totales
-    const envio = 2000;
+    const envio = 2;
     cartSubtotal.textContent = `$${subtotal.toFixed(2)}`;
     cartTotal.textContent = `$${(subtotal + envio).toFixed(2)}`;
     

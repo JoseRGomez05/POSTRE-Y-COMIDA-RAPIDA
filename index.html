@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GANAMJ | Postres y Comida Rápida</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>GANAMJ<span> Postres y Comida Rapidas</span></h1>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="closeMenu"></i>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#menu">Menú</a></li>
+                    <li><a href="#specials">Especiales</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+            <i class="fas fa-bars" id="openMenu"></i>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Sabores que enamoran</h1>
+            <p>Descubre nuestros deliciosos postres y comidas rápidas preparados con los mejores ingredientes</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn primary-btn">Ver Menú</a>
+                <a href="#contact" class="btn secondary-btn">Hacer Pedido</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="/img/Imagen de WhatsApp 2025-04-25 a las 12.56.23_287e2a89.jpg" alt="Deliciosa comida">
+        </div>
+    </section>
+
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Categorías</h2>
+            <div class="category-cards">
+                <div class="category-card" data-category="comida-rapida">
+                    <img src="img/rapida.jpg" alt="Comida Rápida">
+                    <h3>Comida Rápida</h3>
+                </div>
+                <div class="category-card" data-category="postres">
+                    <img src="img/postres.jpg" alt="Postres">
+                    <h3>Postres</h3>
+                </div>
+                <div class="category-card" data-category="bebidas">
+                    <img src="img/debidas.jpg" alt="Bebidas">
+                    <h3>Bebidas</h3>
+                </div>
+                <div class="category-card" data-category="combos">
+                    <img src="img/comohambur.jpg" alt="Combos">
+                    <h3>Combos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Nuestro Menú</h2>
+            <div class="menu-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="comida-rapida">Comida Rápida</button>
+                <button class="filter-btn" data-filter="postres">Postres</button>
+                <button class="filter-btn" data-filter="bebidas">Bebidas</button>
+            </div>
+            <div class="menu-items">
+                <!-- Comida Rápida -->
+                <div class="menu-item" data-category="comida-rapida">
+                    <img src="img/hamburgesa.jpg" alt="Hamburguesa Especial">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>Hamburguesa Especial</h3>
+                            <span class="price">$14.999</span>
+                        </div>
+                        <p>Deliciosa hamburguesa con carne premium, queso cheddar, tocino y salsa especial.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="comida-rapida">
+                    <img src="img/hambur.jpg" alt="Hamburguesa Especial">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>Hamburguesa</h3>
+                            <span class="price">$14.999</span>
+                        </div>
+                        <p>Deliciosa hamburguesa con carne premium, queso cheddar, tocino y salsa especial.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="comida-rapida">
+                    <img src="img/pizza.jpg" alt="Pizza Suprema">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>Pizza Suprema</h3>
+                            <span class="price">$12.999</span>
+                        </div>
+                        <p>Pizza con jamón, pepperoni, champiñones, pimientos y queso mozzarella.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="comida-rapida">
+                    <img src="img/salchipapa.jpg" alt="Hot Dog Gourmet">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>SALCHIPAPAS</h3>
+                            <span class="price">$6.999</span>
+                        </div>
+                        <p>Salchipapa con salchicha, queso costeño, queso derretido y las salsas.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="comida-rapida">
+                    <img src="img/salchipollo.jpg" alt="Hot Dog Gourmet">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>SALCHIPOLLO</h3>
+                            <span class="price">$6.999</span>
+                        </div>
+                        <p>Salchipapa con salchicha, Pechuga, queso costeño, queso derretido y las salsas.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="comida-rapida">
+                    <img src="img/butt.jpg" alt="Gourmet">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>BUTIPAPA</h3>
+                            <span class="price">$6.999</span>
+                        </div>
+                        <p>Los mejores ingredientes, para tu paladar.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="comida-rapida">
+                    <img src="img/buti.jpg" alt="Gourmet">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>CHORIPAPA</h3>
+                            <span class="price">$6.999</span>
+                        </div>
+                        <p>Los mejores ingredientes, para tu paladar...</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="comida-rapida">
+                    <img src="img/perros.jpg" alt="Gourmet">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>PERRO CALIENTE</h3>
+                            <span class="price">$7.999</span>
+                        </div>
+                        <p>Pan de la mejor calidad, para tu paladar.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Postres -->
+                <div class="menu-item" data-category="postres">
+                    <img src="img/torta.jpg" alt="Torta Completa">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>TORTA COMPLETA</h3>
+                            <span class="price">$5.999</span>
+                        </div>
+                        <p>Tu escojes el sabor que quieras y el tamaña que quieras.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="postres">
+                    <img src="img/postres.jpg" alt="Torta por Porciones">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>TORTA POR PORCIONES</h3>
+                            <span class="price">$6.999</span>
+                        </div>
+                        <p>El sabor que desees. con terminos y condiciones a  la disponibildad.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+
+                <!-- Bebidas -->
+                <div class="menu-item" data-category="bebidas">
+                    <img src="img/debidas.jpg" alt="BEBIDAS">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>BEBIDAS</h3>
+                            <span class="price">$4.999</span>
+                        </div>
+                        <p>Cremoso milkshake de chocolate con crema batida y chispas de chocolate.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="bebidas">
+                    <img src="/api/placeholder/250/180" alt="Limonada Fresca">
+                    <div class="item-info">
+                        <div class="item-header">
+                            <h3>Limonada Fresca</h3>
+                            <span class="price">$3.499</span>
+                        </div>
+                        <p>Refrescante limonada natural con menta y hielo picado.</p>
+                        <button class="add-to-cart">Añadir al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specials" class="specials">
+        <div class="container">
+            <h2 class="section-title">Especiales del Día</h2>
+            <div class="specials-container">
+                <div class="special-offer">
+                    <div class="special-image">
+                        <img src="img/hamburgesa.jpg" alt="Combo Familiar">
+                        <div class="discount-tag">-25%</div>
+                    </div>
+                    <div class="special-info">
+                        <h3>Combo Familiar</h3>
+                        <p>4 hamburguesas, 2 porciones de papas y 4 bebidas.</p>
+                        <div class="price-container">
+                            <span class="old-price">$89.999</span>
+                            <span class="new-price">$29.999</span>
+                        </div>
+                        <button class="add-to-cart">Ordenar Ahora</button>
+                    </div>
+                </div>
+                <div class="special-offer">
+                    <div class="special-image">
+                        <img src="/api/placeholder/400/300" alt="Combo Dulce">
+                        <div class="discount-tag">-20%</div>
+                    </div>
+                    <div class="special-info">
+                        <h3>Combo Dulce</h3>
+                        <p>2 postres a elección y 2 cafés o milkshakes.</p>
+                        <div class="price-container">
+                            <span class="old-price">$18.999</span>
+                            <span class="new-price">$15.999</span>
+                        </div>
+                        <button class="add-to-cart">Ordenar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial-slide active">
+                    <div class="testimonial-card">
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Los mejores postres que he probado. El cheesecake de fresa es simplemente delicioso. Sin duda, volveré por más."</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="img/" alt="Cliente">
+                            </div>
+                            <div class="client-details">
+                                <h4>María Rodríguez</h4>
+                                <p>Cliente frecuente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"La hamburguesa especial es increíble. Los ingredientes son frescos y el sabor es único. El servicio también es excelente."</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="/api/placeholder/60/60" alt="Cliente">
+                            </div>
+                            <div class="client-details">
+                                <h4>Carlos Gómez</h4>
+                                <p>Cliente nuevo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-card">
+                        <div class="client-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="testimonial-text">"El combo familiar es perfecto para reuniones. La relación calidad-precio es excelente y todo llega a tiempo y caliente."</p>
+                        <div class="client-info">
+                            <div class="client-image">
+                                <img src="/api/placeholder/60/60" alt="Cliente">
+                            </div>
+                            <div class="client-details">
+                                <h4>Ana Martínez</h4>
+                                <p>Cliente frecuente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                    </div>
+                    <button class="next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contacto</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Barranquilla - Atlantico</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>300 427 3787</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@deliciasexpress.com</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Haz tu pedido</h2>
+                <form id="orderForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Teléfono" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Detalles de tu pedido" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Enviar Pedido</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>GANAMJ<span>Postres y Comida Rápida</span></h2>
+                    <p>Deliciosos postres y comida rápida para satisfacer tus antojos.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#menu">Menú</a></li>
+                        <li><a href="#specials">Especiales</a></li>
+                        <li><a href="#testimonials">Testimonios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hours">
+                    <h3>Horario</h3>
+                    <ul>
+                        <li>Lunes - Viernes: 10:00 - 22:00</li>
+                        <li>Sábado - Domingo: 11:00 - 23:00</li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Suscríbete</h3>
+                    <p>Recibe nuestras promociones y novedades</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Tu email" required>
+                        <button type="submit">Suscribir</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 GANAMJ. Derechos a Jose Gomez.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal del carrito -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Tu Carrito</h2>
+                <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Items del carrito serán agregados dinámicamente -->
+            </div>
+            <div class="cart-summary">
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="cartSubtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Envío:</span>
+                    <span>$2.000</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+            </div>
+            <div class="cart-actions">
+                <button class="btn secondary-btn" id="clearCart">Vaciar Carrito</button>
+                <button class="btn primary-btn" id="checkoutBtn">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+    <div id="confirmModal" class="modal">
+        <div class="modal-content">
+          <h2>¿Deseas enviar tu pedido?</h2>
+          <div class="modal-buttons">
+            <button id="confirmYes" class="btn primary-btn">Sí, Enviar</button>
+            <button id="confirmNo" class="btn secondary-btn">Cancelar</button>
+          </div>
+        </div>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -342,7 +342,7 @@ document.getElementById('orderForm').addEventListener('submit', (e) => {
         });
         
         const subtotal = cartItems.reduce((total, item) => total + (item.price * item.quantity), 0);
-        const envio = 2000;
+        const envio = 2;
         const total = subtotal + envio;
         
         whatsappMessage += "\n*RESUMEN:*\n";
